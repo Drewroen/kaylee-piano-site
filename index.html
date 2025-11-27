@@ -38,8 +38,7 @@
                     <img src="profile.jpg" alt="Profile photo" class="profile-image">
                 </div>
                 <div class="about-text">
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-                    <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                    <p>Hi, I'm Kaylee Roen. My music journey began with an electric piano my grandpa gave me for Christmas when I was a little girl. I now have studied and performed all different kinds of piano over the last 19 years. I graduated from Simpson College studying music education and taught elementary music and some strings for the last 6 years. I also love the strings family playing violin since I was in 4th grade and busting out the ukulele to sing along with my 2 sons. When I am not teaching, I love to run and spend time outside with my family.</p>
                 </div>
             </div>
         </div>
@@ -138,7 +137,7 @@
                     </div>
                     <div class="form-group">
                         <label for="experience">Years of Piano Experience *</label>
-                        <input type="number" id="experience" name="experience" min="0" max="50" step="0.5" required>
+                        <input type="number" id="experience" name="experience" min="0" max="100" step="0.5" required>
                     </div>
                 </div>
 
@@ -250,7 +249,7 @@
 
                 <div class="form-group">
                     <label for="guardianPhone">Phone Number *</label>
-                    <input type="tel" id="guardianPhone" name="guardianPhone" required>
+                    <input type="tel" id="guardianPhone" name="guardianPhone" placeholder="(123) 456-7890" pattern="\([0-9]{3}\) [0-9]{3}-[0-9]{4}" title="Please enter a 10-digit phone number" required>
                 </div>
 
                 <button type="submit" class="submit-button">Submit Registration</button>
@@ -265,10 +264,44 @@
     </footer>
 
     <script>
+        // Phone number formatting
+        const phoneInput = document.getElementById('guardianPhone');
+        phoneInput.addEventListener('input', function(e) {
+            // Remove all non-digit characters
+            let value = e.target.value.replace(/\D/g, '');
+
+            // Limit to 10 digits
+            value = value.substring(0, 10);
+
+            // Format the phone number
+            let formattedValue = '';
+            if (value.length > 0) {
+                formattedValue = '(' + value.substring(0, 3);
+                if (value.length >= 3) {
+                    formattedValue += ') ' + value.substring(3, 6);
+                }
+                if (value.length >= 6) {
+                    formattedValue += '-' + value.substring(6, 10);
+                }
+            }
+
+            e.target.value = formattedValue;
+        });
+
         document.querySelector('.contact-form').addEventListener('submit', async function(e) {
             e.preventDefault();
 
             const form = e.target;
+
+            // Validate at least one time slot is selected
+            const timeCheckboxes = form.querySelectorAll('input[name="time"]');
+            const isAnyTimeChecked = Array.from(timeCheckboxes).some(checkbox => checkbox.checked);
+
+            if (!isAnyTimeChecked) {
+                alert('Please select at least one preferred lesson time.');
+                return;
+            }
+
             const formData = new FormData(form);
 
             try {
