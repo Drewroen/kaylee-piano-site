@@ -29,7 +29,10 @@
       <div class="hero-banner">
         <img src="banner.jpg" alt="Piano banner" class="banner-image" />
         <div class="hero-content">
-          <h1 class="slogan">Music gives a soul to the universe, wings to the mind, flight to the imagination and life to everything. – Plato</h1>
+          <h1 class="slogan">
+            Music gives a soul to the universe, wings to the mind, flight to the
+            imagination and life to everything. – Plato
+          </h1>
         </div>
       </div>
     </section>
@@ -67,10 +70,9 @@
     <section id="lessons" class="services">
       <div class="container">
         <h2>Piano Lessons Offered</h2>
-        <div class="promo-banner">
-          <strong>Try 1 free trial lesson</strong> to get to know each other and
-          learn a little!
-        </div>
+        <a href="#contact" class="trial-lesson-link"
+          >Book 1 free introductory lesson!</a
+        >
         <div class="services-grid">
           <div class="service-card">
             <div class="service-icon">🎹</div>
@@ -81,9 +83,8 @@
             </p>
             <div class="pricing">
               <div class="price-option">
-                <span class="duration">30 min lessons</span>
-                <span class="price"
-                  >$140<span class="per-month">/mo</span></span
+                <span class="price-value investment-pill"
+                  >30 minutes - $140/month + $50 Registration Fee</span
                 >
               </div>
             </div>
@@ -97,35 +98,22 @@
             </p>
             <div class="pricing">
               <div class="price-option">
-                <span class="duration">30 min lessons</span>
-                <span class="price"
-                  >$140<span class="per-month">/mo</span></span
+                <span class="price-value investment-pill"
+                  >30 minutes - $140/month + $50 Registration Fee</span
                 >
               </div>
               <div class="price-option">
-                <span class="duration">45 min lessons</span>
-                <span class="price"
-                  >$180<span class="per-month">/mo</span></span
+                <span class="price-value investment-pill"
+                  >45 minutes - $180/month + $50 Registration Fee</span
                 >
               </div>
               <div class="price-option">
-                <span class="duration">60 min lessons</span>
-                <span class="price"
-                  >$220<span class="per-month">/mo</span></span
+                <span class="price-value investment-pill"
+                  >60 minutes - $220/month + $50 Registration Fee</span
                 >
               </div>
             </div>
           </div>
-        </div>
-        <div class="pricing-footer">
-          <p>
-            All prices are monthly rates and include one weekly lesson of the
-            selected duration.
-          </p>
-          <p">
-            There is a one-time fee of $50 that covers books, materials, recital
-            venue fees, music lab apps, etc.
-          </p>
         </div>
       </div>
     </section>
@@ -173,7 +161,9 @@
           </div>
 
           <div class="form-group">
-            <label for="experience">Describe your child's music experience *</label>
+            <label for="experience"
+              >Describe your child's music experience *</label
+            >
             <textarea
               id="experience"
               name="experience"
@@ -183,33 +173,23 @@
           </div>
 
           <div class="form-group">
-            <label for="interests">What are some of your child's interests? *</label>
-            <textarea
-              id="interests"
-              name="interests"
-              rows="3"
-              required
-            ></textarea>
+            <label for="interests"
+              >What are some of your child's interests?</label
+            >
+            <textarea id="interests" name="interests" rows="3"></textarea>
           </div>
 
           <div class="form-group">
-            <label for="medical">Allergy or medical conditions *</label>
-            <textarea
-              id="medical"
-              name="medical"
-              rows="3"
-              required
-            ></textarea>
+            <label for="medical">Does your child have any allergy/medical conditions?</label>
+            <textarea id="medical" name="medical" rows="3"></textarea>
           </div>
 
           <div class="form-group">
-            <label for="additional">Is there anything else you would like me to know about your child? *</label>
-            <textarea
-              id="additional"
-              name="additional"
-              rows="3"
-              required
-            ></textarea>
+            <label for="additional"
+              >Is there anything else you would like me to know about your
+              child?</label
+            >
+            <textarea id="additional" name="additional" rows="3"></textarea>
           </div>
 
           <!-- Scheduling Section -->
@@ -218,10 +198,18 @@
             <label for="lessonOption">Lesson Option *</label>
             <select id="lessonOption" name="lessonOption" required>
               <option value="">Select a lesson option</option>
-              <option value="Early Learners (Ages 4-6) - 30 min - $140/mo">Early Learners (Ages 4-6) - 30 min - $140/mo</option>
-              <option value="Ages 7+ - 30 min - $140/mo">Ages 7+ - 30 min - $140/mo</option>
-              <option value="Ages 7+ - 45 min - $180/mo">Ages 7+ - 45 min - $180/mo</option>
-              <option value="Ages 7+ - 60 min - $220/mo">Ages 7+ - 60 min - $220/mo</option>
+              <option value="Early Learners (Ages 4-6) - 30 min - $140/mo">
+                Early Learners (Ages 4-6) - 30 min - $140/mo
+              </option>
+              <option value="Ages 7+ - 30 min - $140/mo">
+                Ages 7+ - 30 min - $140/mo
+              </option>
+              <option value="Ages 7+ - 45 min - $180/mo">
+                Ages 7+ - 45 min - $180/mo
+              </option>
+              <option value="Ages 7+ - 60 min - $220/mo">
+                Ages 7+ - 60 min - $220/mo
+              </option>
             </select>
           </div>
 
@@ -393,7 +381,9 @@
 
           <div class="form-row">
             <div class="form-group">
-              <label for="emergencyPhone1">Emergency Contact Phone Number *</label>
+              <label for="emergencyPhone1"
+                >Emergency Contact Phone Number *</label
+              >
               <input
                 type="tel"
                 id="emergencyPhone1"
@@ -405,7 +395,9 @@
               />
             </div>
             <div class="form-group">
-              <label for="emergencyPhone2">Emergency Contact Phone Number 2</label>
+              <label for="emergencyPhone2"
+                >Emergency Contact Phone Number 2</label
+              >
               <input
                 type="tel"
                 id="emergencyPhone2"
