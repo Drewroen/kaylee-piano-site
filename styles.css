@@ -695,6 +695,10 @@ footer {
   .duration-time {
     font-size: 1.35rem;
   }
+
+  .price-value {
+    white-space: normal;
+  }
 }
 
 @media (max-width: 480px) {
