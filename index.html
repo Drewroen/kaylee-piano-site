@@ -16,7 +16,9 @@
   <body>
     <header>
       <nav class="container">
-        <div class="logo">Roen Music Studios</div>
+        <div class="logo">
+          <img src="logo.png" alt="Roen Music Studios" />
+        </div>
         <ul class="nav-links">
           <li><a href="#about">About</a></li>
           <li><a href="#lessons">Lessons</a></li>
@@ -25,15 +27,11 @@
       </nav>
     </header>
 
-    <section id="home" class="hero">
-      <div class="hero-banner">
-        <img src="banner.png" alt="Piano banner" class="banner-image" />
-        <div class="hero-content">
-          <h1 class="slogan">
-            Music gives a soul to the universe, wings to the mind, flight to the
-            imagination and life to everything. – Plato
-          </h1>
-        </div>
+    <section class="hero">
+      <div class="hero-content">
+        <h1>Piano Lessons in Pleasant Hill, Iowa</h1>
+        <p class="hero-subtitle">Quality music education for everyone</p>
+        <a href="#contact" class="cta-button">Book Your Free Trial Lesson</a>
       </div>
     </section>
 
@@ -70,21 +68,13 @@
     <section id="lessons" class="services">
       <div class="container">
         <h2>Piano Lessons Offered</h2>
-        <a href="#contact" class="trial-lesson-link"
-          >Book 1 free introductory lesson!</a
-        >
         <div class="services-grid">
           <div class="service-card">
-            <div class="service-icon">🎹</div>
-            <h3>Early Learners (Ages 4-6)</h3>
-            <p>
-              Introducing young children to the joy of piano through playful,
-              age-appropriate lessons
-            </p>
+            <h3>30 Minutes</h3>
             <div class="pricing">
               <div class="price-option">
                 <span class="price-value investment-pill"
-                  >30 minutes/week - $140/month +
+                  >$140/month +
                   <span style="white-space: nowrap"
                     >$49 Registration Fee</span
                   ></span
@@ -93,32 +83,24 @@
             </div>
           </div>
           <div class="service-card">
-            <div class="service-icon">🎼</div>
-            <h3>Ages 7+</h3>
-            <p>
-              Comprehensive piano instruction ages 7 to adults tailored to
-              students' musical goals and interests
-            </p>
+            <h3>45 Minutes</h3>
             <div class="pricing">
               <div class="price-option">
                 <span class="price-value investment-pill"
-                  >30 minutes/week - $140/month +
+                  >$180/month +
                   <span style="white-space: nowrap"
                     >$49 Registration Fee</span
                   ></span
                 >
               </div>
+            </div>
+          </div>
+          <div class="service-card">
+            <h3>60 Minutes</h3>
+            <div class="pricing">
               <div class="price-option">
                 <span class="price-value investment-pill"
-                  >45 minutes/week - $180/month +
-                  <span style="white-space: nowrap"
-                    >$49 Registration Fee</span
-                  ></span
-                >
-              </div>
-              <div class="price-option">
-                <span class="price-value investment-pill"
-                  >60 minutes/week - $220/month +
+                  >$220/month +
                   <span style="white-space: nowrap"
                     >$49 Registration Fee</span
                   ></span
@@ -220,17 +202,14 @@
             <label for="lessonOption">Lesson Option *</label>
             <select id="lessonOption" name="lessonOption" required>
               <option value="">Select a lesson option</option>
-              <option value="Early Learners (Ages 4-6) - 30 min - $140/mo">
-                Early Learners (Ages 4-6) - 30 min - $140/mo
-              </option>
               <option value="Ages 7+ - 30 min - $140/mo">
-                Ages 7+ - 30 min - $140/mo
+                30 min - $140/mo
               </option>
               <option value="Ages 7+ - 45 min - $180/mo">
-                Ages 7+ - 45 min - $180/mo
+                45 min - $180/mo
               </option>
               <option value="Ages 7+ - 60 min - $220/mo">
-                Ages 7+ - 60 min - $220/mo
+                60 min - $220/mo
               </option>
             </select>
           </div>
