@@ -653,7 +653,12 @@ footer {
   }
 
   .services-grid {
-    grid-template-columns: 1fr;
+    flex-direction: column;
+  }
+
+  .service-card {
+    max-width: 400px;
+    margin: 0 auto;
   }
 
   .promo-banner {
