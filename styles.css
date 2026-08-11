@@ -361,6 +361,10 @@ nav {
 .day-selected {
   grid-column: 1 / -1;
   grid-row: 2;
+  min-width: 0;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
   font-size: 0.75rem;
   font-weight: 500;
   color: #667eea;
