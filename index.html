@@ -274,7 +274,10 @@
             <label>Preferred Lesson Times (Select all that work) *</label>
             <div class="time-picker">
               <details class="day-group">
-                <summary class="day-name">Monday</summary>
+                <summary class="day-name">
+                  <span class="day-label">Monday</span>
+                  <span class="day-selected"></span>
+                </summary>
                 <div class="time-chips">
                   <label class="time-chip"
                     ><input type="checkbox" name="time" value="Mon-3pm" /><span
@@ -327,7 +330,10 @@
                 </div>
               </details>
               <details class="day-group">
-                <summary class="day-name">Tuesday</summary>
+                <summary class="day-name">
+                  <span class="day-label">Tuesday</span>
+                  <span class="day-selected"></span>
+                </summary>
                 <div class="time-chips">
                   <label class="time-chip"
                     ><input type="checkbox" name="time" value="Tue-3pm" /><span
@@ -380,7 +386,10 @@
                 </div>
               </details>
               <details class="day-group">
-                <summary class="day-name">Wednesday</summary>
+                <summary class="day-name">
+                  <span class="day-label">Wednesday</span>
+                  <span class="day-selected"></span>
+                </summary>
                 <div class="time-chips">
                   <label class="time-chip"
                     ><input type="checkbox" name="time" value="Wed-3pm" /><span
@@ -433,7 +442,10 @@
                 </div>
               </details>
               <details class="day-group">
-                <summary class="day-name">Thursday</summary>
+                <summary class="day-name">
+                  <span class="day-label">Thursday</span>
+                  <span class="day-selected"></span>
+                </summary>
                 <div class="time-chips">
                   <label class="time-chip"
                     ><input type="checkbox" name="time" value="Thu-3pm" /><span
@@ -486,7 +498,10 @@
                 </div>
               </details>
               <details class="day-group">
-                <summary class="day-name">Friday</summary>
+                <summary class="day-name">
+                  <span class="day-label">Friday</span>
+                  <span class="day-selected"></span>
+                </summary>
                 <div class="time-chips">
                   <label class="time-chip"
                     ><input type="checkbox" name="time" value="Fri-3pm" /><span
@@ -636,6 +651,25 @@
       phoneInput.addEventListener("input", formatPhoneNumber);
       emergencyPhone1.addEventListener("input", formatPhoneNumber);
       emergencyPhone2.addEventListener("input", formatPhoneNumber);
+
+      // Show each day's selected times next to its name when collapsed
+      document.querySelectorAll(".day-group").forEach((dayGroup) => {
+        const selectedSummary = dayGroup.querySelector(".day-selected");
+        const dayCheckboxes = dayGroup.querySelectorAll(
+          'input[name="time"]'
+        );
+
+        function updateSelectedSummary() {
+          const selectedTimes = Array.from(dayCheckboxes)
+            .filter((checkbox) => checkbox.checked)
+            .map((checkbox) => checkbox.nextElementSibling.textContent);
+          selectedSummary.textContent = selectedTimes.join(", ");
+        }
+
+        dayCheckboxes.forEach((checkbox) =>
+          checkbox.addEventListener("change", updateSelectedSummary)
+        );
+      });
 
       document
         .querySelector(".contact-form")
