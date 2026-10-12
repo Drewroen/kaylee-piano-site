@@ -7,7 +7,7 @@
       name="description"
       content="Piano lessons for Des Moines & Pleasant Hill, Iowa families, taught by Kaylee Roen. Serving Pleasant Hill, Des Moines, Altoona, Runnells, and Bondurant. Book a free trial lesson today."
     />
-    <meta name="theme-color" content="#667eea" />
+    <meta name="theme-color" content="#5b6ef5" />
     <link rel="canonical" href="https://roenmusicstudios.com/" />
     <meta
       property="og:title"
@@ -26,7 +26,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700&family=Inter:wght@400;500;600&display=swap"
       rel="stylesheet"
     />
     <link rel="stylesheet" href="styles.css" />
@@ -61,39 +61,60 @@
       src="//gc.zgo.at/count.js"
     ></script>
   </head>
-  <body>
+  <body id="top">
     <header>
       <nav class="container">
-        <div class="logo">
+        <a class="brand" href="#top">
           <img src="logo.png" alt="Roen Music Studios" width="140" height="44" />
-        </div>
+        </a>
         <ul class="nav-links">
           <li><a href="#about">About</a></li>
           <li><a href="#lessons">Lessons</a></li>
           <li><a href="#contact">Contact</a></li>
         </ul>
+        <a class="nav-cta" href="#contact">Free trial lesson</a>
       </nav>
     </header>
 
     <section class="hero">
-      <div class="hero-content">
-        <h1>Piano Lessons in Pleasant Hill &amp; Des Moines, Iowa</h1>
+      <div class="container">
+        <span class="pill">Des Moines area · Copper Creek, Pleasant Hill</span>
+        <h1>Piano lessons in Pleasant Hill &amp; Des&nbsp;Moines, Iowa</h1>
         <p class="hero-subtitle">
           Quality music education for everyone, serving Pleasant Hill and the
           greater Des Moines area
         </p>
-        <a href="#contact" class="cta-button">Book Your Free Trial Lesson</a>
+        <div class="hero-actions">
+          <a href="#contact" class="cta-button">Book Your Free Trial Lesson</a>
+          <a href="#lessons" class="cta-button-soft">See Lesson Options</a>
+        </div>
+        <p class="hero-trust">
+          30, 45 and 60 minute weekly lessons · Monday, Wednesday &amp; Thursday
+        </p>
+        <div class="hero-shot">
+          <img
+            src="banner.jpg"
+            alt="Kaylee Roen beside a grand piano"
+            width="2200"
+            height="876"
+          />
+          <div class="badge-float">
+            <strong>Kaylee Roen</strong>
+            <span>19 years of piano · Simpson College, music education</span>
+          </div>
+        </div>
       </div>
     </section>
 
     <section id="about" class="about">
       <div class="container">
+        <p class="eyebrow">About</p>
         <h2>About Me</h2>
         <div class="about-content">
           <div class="profile-picture">
             <img
               src="profile.jpg"
-              alt="Profile photo"
+              alt="Kaylee Roen, piano teacher in Pleasant Hill, Iowa"
               class="profile-image"
               width="400"
               height="400"
@@ -112,12 +133,14 @@
               my 2 sons. When I am not teaching, I love to run and spend time
               outside with my family.
             </p>
-            <p>
-              <strong
-                >Lessons are taught out of my home in the Copper Creek
-                Neighborhood in Pleasant Hill, Iowa.</strong
+            <div class="callout">
+              <span class="callout-icon">♪</span>
+              <span
+                >Lessons are taught out of
+                <strong>my home in the Copper Creek Neighborhood</strong>
+                in Pleasant Hill, Iowa.</span
               >
-            </p>
+            </div>
           </div>
         </div>
       </div>
@@ -125,389 +148,398 @@
 
     <section id="lessons" class="services">
       <div class="container">
+        <p class="eyebrow">Lessons</p>
         <h2>Piano Lessons Offered</h2>
         <div class="services-grid">
           <div class="service-card">
-            <h3>30 Minutes</h3>
+            <span class="duration-pill">30 minutes</span>
             <div class="pricing">
               <div class="price-option">
-                <span class="price-value investment-pill"
-                  >$140/month +
-                  <span style="white-space: nowrap"
-                    >$49 Registration Fee</span
-                  ></span
-                >
+                <span class="price-value">$140<small>/month</small></span>
               </div>
             </div>
+            <p class="registration-fee">+ $49 registration fee</p>
+            <a href="#contact" class="cta-button-soft">Register</a>
           </div>
           <div class="service-card">
-            <h3>45 Minutes</h3>
+            <span class="duration-pill">45 minutes</span>
             <div class="pricing">
               <div class="price-option">
-                <span class="price-value investment-pill"
-                  >$180/month +
-                  <span style="white-space: nowrap"
-                    >$49 Registration Fee</span
-                  ></span
-                >
+                <span class="price-value">$180<small>/month</small></span>
               </div>
             </div>
+            <p class="registration-fee">+ $49 registration fee</p>
+            <a href="#contact" class="cta-button-soft">Register</a>
           </div>
           <div class="service-card">
-            <h3>60 Minutes</h3>
+            <span class="duration-pill">60 minutes</span>
             <div class="pricing">
               <div class="price-option">
-                <span class="price-value investment-pill"
-                  >$220/month +
-                  <span style="white-space: nowrap"
-                    >$49 Registration Fee</span
-                  ></span
-                >
+                <span class="price-value">$220<small>/month</small></span>
               </div>
             </div>
+            <p class="registration-fee">+ $49 registration fee</p>
+            <a href="#contact" class="cta-button-soft">Register</a>
           </div>
         </div>
+        <p class="services-note">
+          Lesson times: Monday, Wednesday &amp; Thursday afternoons and evenings.
+        </p>
       </div>
     </section>
 
     <section id="contact" class="contact">
       <div class="container">
-        <h2>Register for Lessons</h2>
-        <div class="contact-subtitle">
-          <p>
-            Fill out the form below to register for piano lessons. We'll be in
-            touch soon!
-          </p>
-          <p>
-            If you have additional questions, feel free to email us at
-            <a href="mailto:roenmusicstudios@gmail.com"
-              >roenmusicstudios@gmail.com</a
-            >.
-          </p>
+        <div class="contact-layout">
+          <div class="contact-intro">
+            <p class="eyebrow">Register</p>
+            <h2>Register for Lessons</h2>
+            <div class="contact-subtitle">
+              <p>
+                Fill out the form below to register for piano lessons. We'll be
+                in touch soon!
+              </p>
+              <p>
+                If you have additional questions, feel free to email us at
+                <a href="mailto:roenmusicstudios@gmail.com"
+                  >roenmusicstudios@gmail.com</a
+                >.
+              </p>
+            </div>
+          </div>
+
+          <form
+            class="contact-form"
+            action="https://formspree.io/f/xovolqqe"
+            method="POST"
+          >
+            <input
+              type="hidden"
+              name="_subject"
+              value="New Piano Lesson Registration"
+            />
+            <!-- Student Information Section -->
+            <h3 class="form-section-title">Student Information</h3>
+            <div class="form-row-3">
+              <div class="form-group">
+                <label for="firstName">First Name *</label>
+                <input type="text" id="firstName" name="firstName" required />
+              </div>
+              <div class="form-group">
+                <label for="lastName">Last Name *</label>
+                <input type="text" id="lastName" name="lastName" required />
+              </div>
+              <div class="form-group">
+                <label for="age">Age *</label>
+                <input
+                  type="number"
+                  id="age"
+                  name="age"
+                  min="1"
+                  max="100"
+                  required
+                />
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label for="experience"
+                >Describe your child's music experience *</label
+              >
+              <textarea
+                id="experience"
+                name="experience"
+                rows="3"
+                required
+              ></textarea>
+            </div>
+
+            <div class="form-group">
+              <label for="interests"
+                >What are some of your child's interests?</label
+              >
+              <textarea id="interests" name="interests" rows="3"></textarea>
+            </div>
+
+            <div class="form-group">
+              <label for="medical"
+                >Does your child have any allergy/medical conditions?</label
+              >
+              <textarea id="medical" name="medical" rows="3"></textarea>
+            </div>
+
+            <div class="form-group">
+              <label for="additional"
+                >Is there anything else you would like me to know about your
+                child?</label
+              >
+              <textarea id="additional" name="additional" rows="3"></textarea>
+            </div>
+
+            <!-- Scheduling Section -->
+            <h3 class="form-section-title">Scheduling Preferences</h3>
+            <div class="form-group">
+              <label for="lessonOption">Lesson Option *</label>
+              <select id="lessonOption" name="lessonOption" required>
+                <option value="">Select a lesson option</option>
+                <option value="Ages 7+ - 30 min - $140/mo">
+                  30 min - $140/mo
+                </option>
+                <option value="Ages 7+ - 45 min - $180/mo">
+                  45 min - $180/mo
+                </option>
+                <option value="Ages 7+ - 60 min - $220/mo">
+                  60 min - $220/mo
+                </option>
+              </select>
+            </div>
+
+            <div class="form-group">
+              <label>Preferred Lesson Times (Select all that work) *</label>
+              <div class="time-picker">
+                <details class="day-group">
+                  <summary class="day-name">
+                    <span class="day-label">Monday</span>
+                    <span class="day-selected"></span>
+                  </summary>
+                  <div class="time-chips">
+                    <label class="time-chip"
+                      ><input type="checkbox" name="time" value="Mon-3pm" /><span
+                        >3:00 PM</span
+                      ></label
+                    >
+                    <label class="time-chip"
+                      ><input
+                        type="checkbox"
+                        name="time"
+                        value="Mon-3:30pm"
+                      /><span>3:30 PM</span></label
+                    >
+                    <label class="time-chip"
+                      ><input type="checkbox" name="time" value="Mon-4pm" /><span
+                        >4:00 PM</span
+                      ></label
+                    >
+                    <label class="time-chip"
+                      ><input
+                        type="checkbox"
+                        name="time"
+                        value="Mon-4:30pm"
+                      /><span>4:30 PM</span></label
+                    >
+                    <label class="time-chip"
+                      ><input type="checkbox" name="time" value="Mon-5pm" /><span
+                        >5:00 PM</span
+                      ></label
+                    >
+                    <label class="time-chip"
+                      ><input
+                        type="checkbox"
+                        name="time"
+                        value="Mon-5:30pm"
+                      /><span>5:30 PM</span></label
+                    >
+                    <label class="time-chip"
+                      ><input type="checkbox" name="time" value="Mon-6pm" /><span
+                        >6:00 PM</span
+                      ></label
+                    >
+                    <label class="time-chip"
+                      ><input
+                        type="checkbox"
+                        name="time"
+                        value="Mon-6:30pm"
+                      /><span>6:30 PM</span></label
+                    >
+                  </div>
+                </details>
+                <details class="day-group">
+                  <summary class="day-name">
+                    <span class="day-label">Wednesday</span>
+                    <span class="day-selected"></span>
+                  </summary>
+                  <div class="time-chips">
+                    <label class="time-chip"
+                      ><input type="checkbox" name="time" value="Wed-3pm" /><span
+                        >3:00 PM</span
+                      ></label
+                    >
+                    <label class="time-chip"
+                      ><input
+                        type="checkbox"
+                        name="time"
+                        value="Wed-3:30pm"
+                      /><span>3:30 PM</span></label
+                    >
+                    <label class="time-chip"
+                      ><input type="checkbox" name="time" value="Wed-4pm" /><span
+                        >4:00 PM</span
+                      ></label
+                    >
+                    <label class="time-chip"
+                      ><input
+                        type="checkbox"
+                        name="time"
+                        value="Wed-4:30pm"
+                      /><span>4:30 PM</span></label
+                    >
+                    <label class="time-chip"
+                      ><input type="checkbox" name="time" value="Wed-5pm" /><span
+                        >5:00 PM</span
+                      ></label
+                    >
+                    <label class="time-chip"
+                      ><input
+                        type="checkbox"
+                        name="time"
+                        value="Wed-5:30pm"
+                      /><span>5:30 PM</span></label
+                    >
+                    <label class="time-chip"
+                      ><input type="checkbox" name="time" value="Wed-6pm" /><span
+                        >6:00 PM</span
+                      ></label
+                    >
+                    <label class="time-chip"
+                      ><input
+                        type="checkbox"
+                        name="time"
+                        value="Wed-6:30pm"
+                      /><span>6:30 PM</span></label
+                    >
+                  </div>
+                </details>
+                <details class="day-group">
+                  <summary class="day-name">
+                    <span class="day-label">Thursday</span>
+                    <span class="day-selected"></span>
+                  </summary>
+                  <div class="time-chips">
+                    <label class="time-chip"
+                      ><input type="checkbox" name="time" value="Thu-3pm" /><span
+                        >3:00 PM</span
+                      ></label
+                    >
+                    <label class="time-chip"
+                      ><input
+                        type="checkbox"
+                        name="time"
+                        value="Thu-3:30pm"
+                      /><span>3:30 PM</span></label
+                    >
+                    <label class="time-chip"
+                      ><input type="checkbox" name="time" value="Thu-4pm" /><span
+                        >4:00 PM</span
+                      ></label
+                    >
+                    <label class="time-chip"
+                      ><input
+                        type="checkbox"
+                        name="time"
+                        value="Thu-4:30pm"
+                      /><span>4:30 PM</span></label
+                    >
+                    <label class="time-chip"
+                      ><input type="checkbox" name="time" value="Thu-5pm" /><span
+                        >5:00 PM</span
+                      ></label
+                    >
+                    <label class="time-chip"
+                      ><input
+                        type="checkbox"
+                        name="time"
+                        value="Thu-5:30pm"
+                      /><span>5:30 PM</span></label
+                    >
+                    <label class="time-chip"
+                      ><input type="checkbox" name="time" value="Thu-6pm" /><span
+                        >6:00 PM</span
+                      ></label
+                    >
+                    <label class="time-chip"
+                      ><input
+                        type="checkbox"
+                        name="time"
+                        value="Thu-6:30pm"
+                      /><span>6:30 PM</span></label
+                    >
+                  </div>
+                </details>
+              </div>
+            </div>
+
+            <!-- Guardian Contact Section -->
+            <h3 class="form-section-title">Contact Information</h3>
+            <div class="form-row">
+              <div class="form-group">
+                <label for="guardianEmail">Email *</label>
+                <input
+                  type="email"
+                  id="guardianEmail"
+                  name="guardianEmail"
+                  required
+                />
+              </div>
+              <div class="form-group">
+                <label for="guardianPhone">Guardian Phone Number *</label>
+                <input
+                  type="tel"
+                  id="guardianPhone"
+                  name="guardianPhone"
+                  placeholder="(123) 456-7890"
+                  pattern="\([0-9]{3}\) [0-9]{3}-[0-9]{4}"
+                  title="Please enter a 10-digit phone number"
+                  required
+                />
+              </div>
+            </div>
+
+            <div class="form-row">
+              <div class="form-group">
+                <label for="emergencyPhone1"
+                  >Emergency Contact Phone Number *</label
+                >
+                <input
+                  type="tel"
+                  id="emergencyPhone1"
+                  name="emergencyPhone1"
+                  placeholder="(123) 456-7890"
+                  pattern="\([0-9]{3}\) [0-9]{3}-[0-9]{4}"
+                  title="Please enter a 10-digit phone number"
+                  required
+                />
+              </div>
+              <div class="form-group">
+                <label for="emergencyPhone2"
+                  >Emergency Contact Phone Number 2</label
+                >
+                <input
+                  type="tel"
+                  id="emergencyPhone2"
+                  name="emergencyPhone2"
+                  placeholder="(123) 456-7890"
+                  pattern="\([0-9]{3}\) [0-9]{3}-[0-9]{4}"
+                  title="Please enter a 10-digit phone number"
+                />
+              </div>
+            </div>
+
+            <button type="submit" class="submit-button">
+              Submit Registration
+            </button>
+          </form>
         </div>
-
-        <form
-          class="contact-form"
-          action="https://formspree.io/f/xovolqqe"
-          method="POST"
-        >
-          <input
-            type="hidden"
-            name="_subject"
-            value="New Piano Lesson Registration"
-          />
-          <!-- Student Information Section -->
-          <h3 class="form-section-title">Student Information</h3>
-          <div class="form-row-3">
-            <div class="form-group">
-              <label for="firstName">First Name *</label>
-              <input type="text" id="firstName" name="firstName" required />
-            </div>
-            <div class="form-group">
-              <label for="lastName">Last Name *</label>
-              <input type="text" id="lastName" name="lastName" required />
-            </div>
-            <div class="form-group">
-              <label for="age">Age *</label>
-              <input
-                type="number"
-                id="age"
-                name="age"
-                min="1"
-                max="100"
-                required
-              />
-            </div>
-          </div>
-
-          <div class="form-group">
-            <label for="experience"
-              >Describe your child's music experience *</label
-            >
-            <textarea
-              id="experience"
-              name="experience"
-              rows="3"
-              required
-            ></textarea>
-          </div>
-
-          <div class="form-group">
-            <label for="interests"
-              >What are some of your child's interests?</label
-            >
-            <textarea id="interests" name="interests" rows="3"></textarea>
-          </div>
-
-          <div class="form-group">
-            <label for="medical"
-              >Does your child have any allergy/medical conditions?</label
-            >
-            <textarea id="medical" name="medical" rows="3"></textarea>
-          </div>
-
-          <div class="form-group">
-            <label for="additional"
-              >Is there anything else you would like me to know about your
-              child?</label
-            >
-            <textarea id="additional" name="additional" rows="3"></textarea>
-          </div>
-
-          <!-- Scheduling Section -->
-          <h3 class="form-section-title">Scheduling Preferences</h3>
-          <div class="form-group">
-            <label for="lessonOption">Lesson Option *</label>
-            <select id="lessonOption" name="lessonOption" required>
-              <option value="">Select a lesson option</option>
-              <option value="Ages 7+ - 30 min - $140/mo">
-                30 min - $140/mo
-              </option>
-              <option value="Ages 7+ - 45 min - $180/mo">
-                45 min - $180/mo
-              </option>
-              <option value="Ages 7+ - 60 min - $220/mo">
-                60 min - $220/mo
-              </option>
-            </select>
-          </div>
-
-          <div class="form-group">
-            <label>Preferred Lesson Times (Select all that work) *</label>
-            <div class="time-picker">
-              <details class="day-group">
-                <summary class="day-name">
-                  <span class="day-label">Monday</span>
-                  <span class="day-selected"></span>
-                </summary>
-                <div class="time-chips">
-                  <label class="time-chip"
-                    ><input type="checkbox" name="time" value="Mon-3pm" /><span
-                      >3:00 PM</span
-                    ></label
-                  >
-                  <label class="time-chip"
-                    ><input
-                      type="checkbox"
-                      name="time"
-                      value="Mon-3:30pm"
-                    /><span>3:30 PM</span></label
-                  >
-                  <label class="time-chip"
-                    ><input type="checkbox" name="time" value="Mon-4pm" /><span
-                      >4:00 PM</span
-                    ></label
-                  >
-                  <label class="time-chip"
-                    ><input
-                      type="checkbox"
-                      name="time"
-                      value="Mon-4:30pm"
-                    /><span>4:30 PM</span></label
-                  >
-                  <label class="time-chip"
-                    ><input type="checkbox" name="time" value="Mon-5pm" /><span
-                      >5:00 PM</span
-                    ></label
-                  >
-                  <label class="time-chip"
-                    ><input
-                      type="checkbox"
-                      name="time"
-                      value="Mon-5:30pm"
-                    /><span>5:30 PM</span></label
-                  >
-                  <label class="time-chip"
-                    ><input type="checkbox" name="time" value="Mon-6pm" /><span
-                      >6:00 PM</span
-                    ></label
-                  >
-                  <label class="time-chip"
-                    ><input
-                      type="checkbox"
-                      name="time"
-                      value="Mon-6:30pm"
-                    /><span>6:30 PM</span></label
-                  >
-                </div>
-              </details>
-              <details class="day-group">
-                <summary class="day-name">
-                  <span class="day-label">Wednesday</span>
-                  <span class="day-selected"></span>
-                </summary>
-                <div class="time-chips">
-                  <label class="time-chip"
-                    ><input type="checkbox" name="time" value="Wed-3pm" /><span
-                      >3:00 PM</span
-                    ></label
-                  >
-                  <label class="time-chip"
-                    ><input
-                      type="checkbox"
-                      name="time"
-                      value="Wed-3:30pm"
-                    /><span>3:30 PM</span></label
-                  >
-                  <label class="time-chip"
-                    ><input type="checkbox" name="time" value="Wed-4pm" /><span
-                      >4:00 PM</span
-                    ></label
-                  >
-                  <label class="time-chip"
-                    ><input
-                      type="checkbox"
-                      name="time"
-                      value="Wed-4:30pm"
-                    /><span>4:30 PM</span></label
-                  >
-                  <label class="time-chip"
-                    ><input type="checkbox" name="time" value="Wed-5pm" /><span
-                      >5:00 PM</span
-                    ></label
-                  >
-                  <label class="time-chip"
-                    ><input
-                      type="checkbox"
-                      name="time"
-                      value="Wed-5:30pm"
-                    /><span>5:30 PM</span></label
-                  >
-                  <label class="time-chip"
-                    ><input type="checkbox" name="time" value="Wed-6pm" /><span
-                      >6:00 PM</span
-                    ></label
-                  >
-                  <label class="time-chip"
-                    ><input
-                      type="checkbox"
-                      name="time"
-                      value="Wed-6:30pm"
-                    /><span>6:30 PM</span></label
-                  >
-                </div>
-              </details>
-              <details class="day-group">
-                <summary class="day-name">
-                  <span class="day-label">Thursday</span>
-                  <span class="day-selected"></span>
-                </summary>
-                <div class="time-chips">
-                  <label class="time-chip"
-                    ><input type="checkbox" name="time" value="Thu-3pm" /><span
-                      >3:00 PM</span
-                    ></label
-                  >
-                  <label class="time-chip"
-                    ><input
-                      type="checkbox"
-                      name="time"
-                      value="Thu-3:30pm"
-                    /><span>3:30 PM</span></label
-                  >
-                  <label class="time-chip"
-                    ><input type="checkbox" name="time" value="Thu-4pm" /><span
-                      >4:00 PM</span
-                    ></label
-                  >
-                  <label class="time-chip"
-                    ><input
-                      type="checkbox"
-                      name="time"
-                      value="Thu-4:30pm"
-                    /><span>4:30 PM</span></label
-                  >
-                  <label class="time-chip"
-                    ><input type="checkbox" name="time" value="Thu-5pm" /><span
-                      >5:00 PM</span
-                    ></label
-                  >
-                  <label class="time-chip"
-                    ><input
-                      type="checkbox"
-                      name="time"
-                      value="Thu-5:30pm"
-                    /><span>5:30 PM</span></label
-                  >
-                  <label class="time-chip"
-                    ><input type="checkbox" name="time" value="Thu-6pm" /><span
-                      >6:00 PM</span
-                    ></label
-                  >
-                  <label class="time-chip"
-                    ><input
-                      type="checkbox"
-                      name="time"
-                      value="Thu-6:30pm"
-                    /><span>6:30 PM</span></label
-                  >
-                </div>
-              </details>
-            </div>
-          </div>
-
-          <!-- Guardian Contact Section -->
-          <h3 class="form-section-title">Contact Information</h3>
-          <div class="form-row">
-            <div class="form-group">
-              <label for="guardianEmail">Email *</label>
-              <input
-                type="email"
-                id="guardianEmail"
-                name="guardianEmail"
-                required
-              />
-            </div>
-            <div class="form-group">
-              <label for="guardianPhone">Guardian Phone Number *</label>
-              <input
-                type="tel"
-                id="guardianPhone"
-                name="guardianPhone"
-                placeholder="(123) 456-7890"
-                pattern="\([0-9]{3}\) [0-9]{3}-[0-9]{4}"
-                title="Please enter a 10-digit phone number"
-                required
-              />
-            </div>
-          </div>
-
-          <div class="form-row">
-            <div class="form-group">
-              <label for="emergencyPhone1"
-                >Emergency Contact Phone Number *</label
-              >
-              <input
-                type="tel"
-                id="emergencyPhone1"
-                name="emergencyPhone1"
-                placeholder="(123) 456-7890"
-                pattern="\([0-9]{3}\) [0-9]{3}-[0-9]{4}"
-                title="Please enter a 10-digit phone number"
-                required
-              />
-            </div>
-            <div class="form-group">
-              <label for="emergencyPhone2"
-                >Emergency Contact Phone Number 2</label
-              >
-              <input
-                type="tel"
-                id="emergencyPhone2"
-                name="emergencyPhone2"
-                placeholder="(123) 456-7890"
-                pattern="\([0-9]{3}\) [0-9]{3}-[0-9]{4}"
-                title="Please enter a 10-digit phone number"
-              />
-            </div>
-          </div>
-
-          <button type="submit" class="submit-button">
-            Submit Registration
-          </button>
-        </form>
       </div>
     </section>
+
+    <footer>
+      <div class="container footer-inner">
+        <span>Roen Music Studios · Pleasant Hill, Iowa</span>
+        <a href="mailto:roenmusicstudios@gmail.com"
+          >roenmusicstudios@gmail.com</a
+        >
+      </div>
+    </footer>
 
     <script>
       // Phone number formatting function
@@ -545,9 +577,7 @@
       // Show each day's selected times next to its name when collapsed
       document.querySelectorAll(".day-group").forEach((dayGroup) => {
         const selectedSummary = dayGroup.querySelector(".day-selected");
-        const dayCheckboxes = dayGroup.querySelectorAll(
-          'input[name="time"]'
-        );
+        const dayCheckboxes = dayGroup.querySelectorAll('input[name="time"]');
 
         function updateSelectedSummary() {
           const selectedTimes = Array.from(dayCheckboxes)
@@ -593,7 +623,7 @@
             if (response.ok) {
               // Clear the form and show thank you message
               form.innerHTML =
-                '<div style="text-align: center; padding: 40px 20px;"><h3 style="color: var(--primary-color); margin-bottom: 15px;">Thank you for submitting!</h3><p style="font-size: 18px;">Kaylee will get in touch soon.</p></div>';
+                '<div style="text-align: center; padding: 40px 20px;"><h3 style="color: var(--accent); margin-bottom: 15px;">Thank you for submitting!</h3><p style="font-size: 18px;">Kaylee will get in touch soon.</p></div>';
             } else {
               alert(
                 "Oops! There was a problem submitting your form. Please try again."
